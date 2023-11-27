@@ -1,23 +1,31 @@
+import 'dart:html';
+
 import 'package:flutter/material.dart';
+import 'package:flutter_layout/myhomescreen.dart';
+import 'package:flutter_layout/myhomescreen_v1.dart';
 
 void main() {
-  runApp( Homepage());
- 
+  runApp(MyHomeScreen());
+  //runApp(MaterialApp(
+  //home: Text('Hello Laout'),
+  //));
+
 }
 
-class Homepage extends StatelessWidget {
-  const Homepage({super.key});
+
+
+class MyHomeScreen extends StatelessWidget {
+  const MyHomeScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-         title: Text ('Flutter Layout'),
-        ),
-        body: Text('Massage Display'),
-      ),
+      debugShowCheckedModeBanner: false,
+      home: Myscreen2(),
     );
-
   }
+
 }
+
+
+
