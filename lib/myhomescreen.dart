@@ -6,7 +6,7 @@ class Myscreen2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 253, 162, 88),
+      backgroundColor: Color.fromARGB(255, 0, 0, 0),
       appBar: AppBar(
         title: const Text('Myscreen2'),
       ),
@@ -14,10 +14,35 @@ class Myscreen2 extends StatelessWidget {
         child: Container(
           height: 300,
           width: 300,
-          color: const Color.fromARGB(255, 255, 86, 74),
-          padding: EdgeInsets.symmetric(
-            vertical: 50,
-            horizontal: 25,
+          decoration: BoxDecoration(
+            color: Colors.blue,
+            borderRadius: BorderRadius.circular(20)
+          ),
+          padding: EdgeInsets.all(25),
+          child: Center(
+            child: Column(
+              children: [
+                Text('Peeradet Peeralai',
+                style: TextStyle(
+                  fontSize: 30,
+                  color: Colors.white,
+                ),
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Icon(Icons.favorite,
+                    color: Colors.white,
+                    size: 30,
+                    ),
+                    Icon(Icons.favorite,
+                    color: Colors.white,
+                    size: 30,
+                    ),
+                  ],
+                ),
+              ],
+            ),
             ),
         )
         ),
